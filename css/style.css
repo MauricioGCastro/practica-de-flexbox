@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: #122838;
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+}
+
+footer{
+    background-color: lightslategray;
+    padding: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+section{
+    margin: 25px;
+}
+
+h2{
+    margin: 15px 0px;
+}
+/*PRACTICA DE DISPLAY FLEX*/
+
+.padre{
+    display: flex;
+}
+
+.item{
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    width: 400px;
+    height: 35px;
+}
+
+#box1{
+    background-color: #122838;
+}
+#box2{
+    background-color: #364755;
+}
+#box3{
+    background-color: #5b6875;
+}
+#box4{
+    background-color: #828b95;
+}
+#box5{
+    background-color: #aab1b7;
+}
+#box6{
+    background-color: #d4d7db;
+}
+#box7{
+    background-color: #ffffff;
+    display: flex;
+}
+
+/*REVERSE*/
+
+.padre-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.padre-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.padre-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* CONTENEDOR WRAP */
+
+.padre-wrap{
+    display: flex;
+    background-color: lightpink;
+    flex-wrap: wrap; /*RESPETA EL TAMANO DEL ITEM HIJO*/
+}
+
+/*CONTENEDOR CON ITEMS CENTRADOS*/
+.padre-centrado{
+    display: flex;
+    background-color: lightpink;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*CONTENEDOR CON ITEMS alineados al final*/
+.padre-alineado-end{
+    display: flex;
+    background-color: lightpink;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/*CONTENEDOR CON ESPACIO ENTRE LOS ITEMS*/
+.padre-items-between{
+    display: flex;
+    background-color: lightpink;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*CONTENEDOR CON ESPACIO ALREDEDOR DE LOS ITEMS*/
+.padre-items-around{
+    display: flex;
+    background-color: lightpink;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*CONTENEDOR ALINEADO VERTICALMENTE*/
+.padre-vertical{
+    display: flex;
+    background-color: rgb(221, 255, 182);
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+    align-content: space-around;
+}
+
+/*CONTENEDOR ALINEADO COMO COLUMNA*/
+.contenedor-col{
+    display: flex;
+    background-color: lightsteelblue;
+    flex-wrap: wrap;
+    height: 250px;
+    flex-direction: column; /* aqui defino el eje principal*/
+    align-content: center;
+    justify-content: space-around;
+}
+
+/*ESTILOS DE BOX INDIVIDUAL*/
+.box{
+    border: 1px solid blue;
+}
